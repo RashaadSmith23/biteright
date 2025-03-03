@@ -1,0 +1,1216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+:root {
+    --text-color-1: #fff;
+    --text-color-2: #000;
+    --text-color-3: #868686;
+    --color-1: #0F7991;
+    --color-2: #E2D1A3;
+    --color-3: #9AA31F;
+    --color-4: #FF9429;
+    --color-5: #B21000;
+    --color-6: #591902;
+    --color-7: #f7fd99;
+    --color-8: #dadada;
+}
+
+header {
+    background: linear-gradient(to bottom, #f6fd999f, #e2d1a3b6), url(assets/background-illustrator.png);
+    height: 100%;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-2);
+}
+
+header nav .logo img {
+    width: 90px;
+}
+
+header nav .sidebar, 
+header nav .menu-btn {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+header nav ul li {
+    transition: font-weight .3s ease-in-out;
+    font-weight: 800;
+}
+
+header nav ul li:hover {
+    color: var(--color-5);
+    font-weight: 800;
+}
+
+header .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 1.5rem;
+    font-family: 'Bevan', sans-serif;
+    text-transform: uppercase;
+    height: 602px;
+}
+
+header .hero-section .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header .hero-section .left p {
+    font-size: .9rem;
+    padding: 9px;
+    width: 410px;
+    border: 2px dashed var(--color-6);
+}
+
+header .hero-section .left button {
+    width: 36%;
+    padding: 10px;
+    border: 2px solid var(--color-6);
+    background: transparent;
+    border-radius: 80px;
+    color: var(--color-6);
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    position: relative;
+}
+
+header .hero-section .left button:hover {
+    background-color: var(--color-6);
+    color: #fff;
+}
+
+header .hero-section .right img {
+    width: 500px;
+}
+
+.section {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.section .tab-1 {
+    width: 100%;
+    height: 300px;
+    background: url(assets/Tab-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-1);
+}
+
+.section .tab {
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: filter .3s ease-in-out;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.section .tab:hover {
+    filter: grayscale(100%);
+}
+
+.section .tab h1 {
+    width: 100%;
+    font-weight: 400;
+}
+
+.section .tab-2 {
+    width: 100%;
+    height: 300px;
+    background: url(assets/Tab-image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-1);
+}
+
+.section .tab-3 {
+    width: 100%;
+    height: 300px;
+    background: url(assets/Tab-image-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.container p:first-child {
+    font-family: 'Bevan', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.container p:last-child {
+    margin: auto;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+
+.container h1 {
+    font-family: 'Bevan', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-7);
+    -webkit-text-stroke: 1px var(--color-3);
+    text-transform: uppercase;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-container .menu-column img {
+    cursor: pointer;
+}
+
+.menu-container .menu-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: 'Bevan', sans-serif;
+    text-transform: uppercase;
+}
+
+.menu-container .menu-column p {
+    font-family: 'Arial', sans-serif;
+    font-size: .9rem;
+    color: var(--text-color-3);
+}
+
+.menu-container .menu-column button {
+    padding: 10px 25px;
+    background-color: var(--color-6);
+    color: var(--text-color-1);
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 1.2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.menu-container .menu-column button:hover {
+    background-color: var(--color-5);
+}
+
+.event-section {
+    width: 90%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+}
+
+.event-section  .location-section, .about-section {
+    margin-bottom: 1.5rem;
+}
+
+.event-section .location-section p span,
+.event-section .highlights-section p span {
+    font-weight: 600;
+}
+
+.event-section h3,
+.event-section .highlights-section h3 {
+    margin-bottom: 0.5rem;
+}
+
+.event-section img {
+    float: right;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.form-section .left-img,
+.form-section .right-img {
+    width: 230px;
+    display: block;
+    position: absolute;
+    
+}
+
+.form-section {
+    position: relative;
+}
+
+.form-section .right-img {
+    right: 10px;
+}
+
+.form-section .left-img {
+    top: -160px;
+    left: 10px;
+} 
+
+.form-section form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.form-section form input {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border: 1px solid var(--text-color-2);
+    border-radius: 60px;
+
+}
+
+.form-section form input::placeholder {
+    color: var(--text-color-3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-section form .group {
+    display: flex;
+    gap: 20px;
+}
+
+.form-section form .group input {
+    width: 50%;
+    border: 1px solid var(--text-color-2);
+}
+
+.form-section form .submit-btn {
+    width: 30%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: var(--color-6);
+    color: var(--text-color-1);
+    font-weight: 600;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.form-section form .submit-btn:hover {
+    background-color: var(--color-5);
+}
+
+footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    background: linear-gradient(220deg, #0000002d, #00000033), url(assets/footer-image\(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+footer .about img {
+    width: 100px;
+}
+
+footer .about p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-1);
+    width: 80%;
+    margin-top: 20px;
+}
+
+footer .contacts {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-1);
+}
+
+footer .contacts .location-container {
+    display: flex;
+    gap: 10px;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-color-1);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-6);
+    padding: 10px;
+}
+
+#topButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: var(--color-6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color .3s ease-out;
+}
+#topButton:hover {
+    background-color: var(--color-5);
+}
+
+/* Responsive Styling */
+@media (max-width: 425px) {
+    header {
+        width: 100%;
+        height: 171vw;
+        position: relative;
+    }
+
+    header nav {
+        display: flex;
+        min-height: 19%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .sidebar {
+        display: block;
+        position: fixed;
+        top: 110px;
+        left: -350px;
+        width: 80%;
+        height: 100%;
+        background-color: #e2d1a3f2;
+        padding: 27px 34px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav .sidebar li {
+        font-family: 'Bevan', sans-serif;
+        padding: 9px 0;
+    }
+
+    header nav .sidebar.show {
+        left: 0px;
+    }
+
+    header nav .menu-btn {
+        display: block;
+        width: 35px;
+        margin-left: auto;
+        position: fixed;
+        top: 37px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    header .hero-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        margin-top: 7rem;
+    }
+
+    header .hero-section .left {
+        order: 2;
+        width: 90%;
+    }
+
+    header .hero-section .right img {
+        width: 315px;
+    }
+
+    header .hero-section .left h1 {
+        text-align: center;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .left button {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .other-options {
+        display: none;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section .tab-1,
+    .section .tab-2,
+    .section .tab-3 {
+        height: 200px;
+    }
+
+    .container {
+        margin-top: 3rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: 247px;
+    }
+
+    .menu-container img {
+        width: 100%;
+    }
+
+    .menu-column p {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .event-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .event-section img {
+        display: none;
+    }
+
+    .form-section form {
+        width: 90%;
+    }
+
+    .form-section form .group {
+        flex-wrap: wrap;
+    }
+
+    .form-section form .group input {
+        width: 100%;
+    }
+
+    .form-section .right-img,
+    .form-section .left-img {
+        display: none;
+    }
+
+    .form-section form .submit-btn {
+        width: 60%;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .about p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    footer .contacts {
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .copyright-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 480px) {
+    header {
+        width: 100%;
+        height: 171vw;
+        position: relative;
+    }
+
+    header nav {
+        display: flex;
+        min-height: 7%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .sidebar {
+        display: block;
+        position: fixed;
+        top: 110px;
+        left: -250px;
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-2);
+        padding: 27px 34px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav .sidebar li {
+        font-family: 'Bevan', sans-serif;
+        padding: 9px 0;
+    }
+
+    header nav .sidebar.show {
+        left: 0px;
+    }
+
+    header nav .menu-btn {
+        display: block;
+        width: 35px;
+        margin-left: auto;
+        position: fixed;
+        top: 39px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    header .hero-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 2rem;
+    }
+
+    header .hero-section .left {
+        order: 2;
+        width: 90%;
+    }
+
+    header .hero-section .right img {
+        width: 315px;
+    }
+
+    header .hero-section .left h1 {
+        text-align: center;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .left button {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .other-options {
+        display: none;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section .tab-1,
+    .section .tab-2,
+    .section .tab-3 {
+        height: 200px;
+    }
+
+    .container {
+        margin-top: 3rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: 247px;
+    }
+
+    .menu-container img {
+        width: 100%;
+    }
+
+    .menu-column p {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .event-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .event-section img {
+        display: none;
+    }
+
+    .form-section form {
+        width: 90%;
+    }
+
+    .form-section form .group {
+        flex-wrap: wrap;
+    }
+
+    .form-section form .group input {
+        width: 100%;
+    }
+
+    .form-section .right-img,
+    .form-section .left-img {
+        display: none;
+    }
+
+    .form-section form .submit-btn {
+        width: 60%;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .about p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    footer .contacts {
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .copyright-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 537px) {
+    header {
+        width: 100%;
+        height: 171vw;
+        position: relative;
+    }
+
+    header nav {
+        display: flex;
+        min-height: 7%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .sidebar {
+        display: block;
+        position: fixed;
+        top: 110px;
+        left: -250px;
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-2);
+        padding: 27px 34px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav .sidebar li {
+        font-family: 'Bevan', sans-serif;
+        padding: 9px 0;
+    }
+
+    header nav .sidebar.show {
+        left: 0px;
+    }
+
+    header nav .menu-btn {
+        display: block;
+        width: 35px;
+        margin-left: auto;
+        position: fixed;
+        top: 39px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    header .hero-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 2rem;
+    }
+
+    header .hero-section .left {
+        order: 2;
+        width: 90%;
+    }
+
+    header .hero-section .right img {
+        width: 315px;
+    }
+
+    header .hero-section .left h1 {
+        text-align: center;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .left button {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    .other-options {
+        display: none;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section .tab-1,
+    .section .tab-2,
+    .section .tab-3 {
+        height: 200px;
+    }
+
+    .container {
+        margin-top: 3rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: 247px;
+    }
+
+    .menu-container img {
+        width: 100%;
+    }
+
+    .menu-column p {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .event-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .event-section img {
+        display: none;
+    }
+
+    .form-section form {
+        width: 90%;
+    }
+
+    .form-section form .group {
+        flex-wrap: wrap;
+    }
+
+    .form-section form .group input {
+        width: 100%;
+    }
+
+    .form-section .right-img,
+    .form-section .left-img {
+        display: none;
+    }
+
+    .form-section form .submit-btn {
+        width: 60%;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    footer .about p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    footer .contacts {
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .copyright-container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 538px) and  (max-width: 676px) {
+    header .hero-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: 2rem;
+    }
+
+    header .hero-section .left {
+        order: 2;
+        width: 90%;
+    }
+
+    header .hero-section .right img {
+        width: 315px;
+    }
+
+    header .hero-section .left h1 {
+        text-align: center;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .left button {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    } 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    header nav {
+        display: flex;
+        min-height: 19%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav .sidebar {
+        display: block;
+        position: fixed;
+        top: 110px;
+        left: -404px;
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-2);
+        padding: 27px 34px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav .sidebar li {
+        font-family: 'Bevan', sans-serif;
+        padding: 9px 0;
+    }
+
+    header nav .sidebar.show {
+        left: 0;
+    }
+
+    header nav .menu-btn {
+        display: block;
+        width: 35px;
+        margin-left: auto;
+        position: fixed;
+        top: 37px;
+        right: 18px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    header .hero-section {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        gap: 22px;
+        padding-bottom: 50px;
+        padding-top: 118px;
+    }
+
+    header .hero-section .left {
+        width: 90%;
+    }
+
+    header .hero-section .right img {
+        width: 300px;
+    }
+
+    header .hero-section .left h1 {
+        text-align: center;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .left button {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    header .other-options h2 {
+        font-family: 'Bevan', sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+
+    header .other-options img {
+        width: 170px;
+    }
+    
+    header .other-options .other-img-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: none;
+        padding: 10px;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .section .tab-1, 
+    .section .tab-2, 
+    .section .tab-3 {
+        width: 48%;
+        height: 200px;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .event-section img {
+        padding: 20px;
+        border-radius: 40px;
+    }
+
+    .form-section {
+        width: 100%; 
+    }
+
+    .form-section form {
+        width: 75%;
+    }
+
+    .form-section .right-img {
+        right: -20px;
+        display: none;
+    }
+
+    .form-section .left-img {
+        left: -20px;
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .section .tab {
+        width: 48%;
+        height: 200px;
+    }
+
+    header .hero-section .left {
+        width: 86%;
+        margin-left: 26px;
+    }
+
+    header .hero-section .left p {
+        width: 100%;
+    }
+
+    header .hero-section .right img {
+        width: 82%;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .event-section img,
+    .form-section .left-img,
+    .form-section .right-img {
+        display: none;
+    }
+
+    .form-section form {
+        width: 73%;
+    }
+}
+
